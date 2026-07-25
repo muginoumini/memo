@@ -8,7 +8,7 @@ url: "https://muginoumini.github.io"
 
 # 如果你的 repo 名稱不是「你的帳號.github.io」,這裡要填 "/你的repo名稱"
 # 例如 repo 叫 my-diary,這裡就填 "/my-diary"
-baseurl: "/memo/"
+baseurl: "/memo"
 
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
