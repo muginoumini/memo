@@ -1,6 +1,8 @@
 ---
 title: ""
 date: 2026-07-25 17:51:00 Z
+tags:
+  - 隨筆
 read_more: null
 ---
 終於做出了新日記！！！
