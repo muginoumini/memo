@@ -1,0 +1,32 @@
+title: 日日記
+description: 一些日常,一些心情
+author: 我
+lang: zh-Hant
+
+# 部署後請把這裡改成你的網址,例如 https://your-site.netlify.app
+url: ""
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page:num/"
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

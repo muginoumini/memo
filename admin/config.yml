@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+publish_mode: simple
+
+collections:
+  - name: "posts"
+    label: "日記"
+    label_singular: "一篇日記"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: title
+    fields:
+      - { label: "標題", name: "title", widget: "string", required: false, hint: "留空的話,首頁會直接用日期當標題" }
+      - { label: "日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", picker_utc: true }
+      - { label: "標籤", name: "tags", widget: "list", required: false }
+      - label: "首頁的顯示方式"
+        name: "read_more"
+        widget: "select"
+        required: false
+        default: "auto"
+        hint: "選「開啟」的話,首頁只會先顯示一部分,並出現「繼續閱讀」按鈕"
+        options:
+          - { label: "自動(內容太長才收合)", value: "auto" }
+          - { label: "開啟收合按鈕", value: "on" }
+          - { label: "永遠顯示全文", value: "off" }
+      - { label: "內容", name: "body", widget: "markdown" }
