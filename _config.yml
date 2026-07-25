@@ -3,8 +3,12 @@ description: 一些日常,一些心情
 author: 我
 lang: zh-Hant
 
-# 部署後請把這裡改成你的網址,例如 https://your-site.netlify.app
+# 部署後請把這裡改成你的網址,例如 https://你的帳號.github.io
 url: ""
+
+# 如果你的 repo 名稱不是「你的帳號.github.io」,這裡要填 "/你的repo名稱"
+# 例如 repo 叫 my-diary,這裡就填 "/my-diary"
+baseurl: ""
 
 markdown: kramdown
 permalink: /:year/:month/:day/:title/

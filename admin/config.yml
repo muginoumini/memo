@@ -1,3 +1,7 @@
+# ⬇️ 這一段「backend」請整段換成 DecapBridge 網站幫你產生的內容
+# 步驟:decapbridge.com 建立 site 後,它會給你一段 config.yml,
+# 把那段「backend: ...」複製過來貼在這裡取代掉下面 3 行就好,
+# 下面 collections 的部分不用動。
 backend:
   name: git-gateway
   branch: main
