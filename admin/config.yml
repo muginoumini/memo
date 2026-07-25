@@ -35,6 +35,10 @@ logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 # Add site links in Decap CMS (optional)
 site_url: https://muginoumini.github.io
 
+# 必須新增以下這行（指定上傳圖片/媒體儲存的路徑）
+media_folder: "assets/images" # 請依你的專案架構調整，例如 "assets/images" 或 "public/images"
+public_folder: "/images"       # 發佈後 HTML 讀取圖片的網址相對路徑
+
 collections:
   - name: "posts"
     label: "日記"
